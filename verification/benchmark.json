@@ -1,0 +1,68 @@
+{
+  "durationSeconds": 60,
+  "warmupSeconds": 1.5,
+  "resolution": [
+    2560,
+    1440
+  ],
+  "quality": "Ultra",
+  "configurationChanged": false,
+  "cpuMs": {
+    "samples": 3579,
+    "average": 0.7189438434395253,
+    "p99": 3.200000047683716,
+    "max": 11.899999618530273
+  },
+  "gpuMs": {
+    "samples": 3579,
+    "average": 6.063938602800974,
+    "p99": 10.944512367248535,
+    "max": 12.517375946044922
+  },
+  "frameIntervalMs": {
+    "samples": 3578,
+    "average": 16.76456135647999,
+    "p99": 17.299999237060547,
+    "max": 233.39999389648438
+  },
+  "frameIntervalDetail": {
+    "over16Point7Ms": 1023,
+    "worstAtSeconds": 7.883400041580201
+  },
+  "fps": 59.64963703708662,
+  "peakJsHeapBytes": 21132617,
+  "adapter": {
+    "vendor": "nvidia",
+    "architecture": "lovelace",
+    "device": "",
+    "description": "",
+    "isFallbackAdapter": false
+  },
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "timestampQueries": true,
+  "frameCount": 3579,
+  "chrome": "Chrome/157.0.8103.79",
+  "gpuDevices": [
+    {
+      "vendorId": 4318,
+      "deviceId": 10465,
+      "subSysId": 1023809450,
+      "revision": 161,
+      "vendorString": "",
+      "deviceString": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "driverVendor": "NVIDIA",
+      "driverVersion": "32.0.16.1714"
+    },
+    {
+      "vendorId": 5140,
+      "deviceId": 140,
+      "subSysId": 0,
+      "revision": 0,
+      "vendorString": "",
+      "deviceString": "Microsoft Basic Render Driver",
+      "driverVendor": "",
+      "driverVersion": "10.0.26100.9818"
+    }
+  ],
+  "webgpuStatus": "enabled"
+}
