@@ -1,6 +1,14 @@
 # Stratos performance and verification
 
-## Build
+## Current spectator controls
+
+The current 151,693-byte build adds ground camera movement, adjustable eye height, Follow Jet and Recenter controls. Chrome 157 on the RTX 4050 Laptop GPU passed the movement, follow/fixed, height, pause cleanup, orbit restoration, and smoke-loop checks at 2560 × 1440. The new capture is in `spectator-controls.png`.
+
+Current SHA-256 `cb697d2bae4ec0c4b2b9ebe9f36dac4a52b3ba04eb92ed512e0390176fa89792`
+
+The timing results below cover the preceding ground-camera build.
+
+## Measured build
 
 **148,183 bytes · 148.18 KB · 144.71 KiB**, minified and uncompressed. The full simulation is contained in `index.html`.
 
