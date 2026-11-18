@@ -6,7 +6,7 @@ Stratos is a single-file WebGPU flight simulator with a procedural alpine coast,
 
 ## Fly
 
-[Play Stratos in your browser](https://sanketshahane05.github.io/fighterJet/).
+[Play Stratos in your browser](https://sanketshahane05.github.io/stratos-flight-simulator/).
 
 Download [index.html](index.html) and open it in a WebGPU-enabled browser. Chrome 157 was tested with hardware acceleration. The simulator requires no installation, build, external assets, or network connection.
 
