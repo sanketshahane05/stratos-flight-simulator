@@ -1,6 +1,12 @@
 # Stratos performance and verification
 
-## Current spectator controls
+## Multiplayer build
+
+The current 187,589-byte build adds four-pilot rooms, remote aircraft and smoke, invite links, and ground spectating of other pilots. Live browser checks and network limitations are recorded in [multiplayer.md](multiplayer.md).
+
+Current SHA-256 `97a307e5f82aa796d2319c42102009f71fc9c241a5c677380e158bf97e7f3f8b`
+
+## Earlier spectator controls
 
 The current 151,693-byte build adds ground camera movement, adjustable eye height, Follow Jet and Recenter controls. Chrome 157 on the RTX 4050 Laptop GPU passed the movement, follow/fixed, height, pause cleanup, orbit restoration, and smoke-loop checks at 2560 × 1440. The new capture is in `spectator-controls.png`.
 

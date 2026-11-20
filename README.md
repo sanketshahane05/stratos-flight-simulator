@@ -1,6 +1,6 @@
 # Stratos Flight Simulator
 
-Stratos is a single-file WebGPU flight simulator with a procedural alpine coast, clouds, live cockpit instruments, and a ground camera with movement and jet-following controls for watching aerobatics.
+Stratos is a single-file WebGPU flight simulator with a procedural alpine coast, clouds, live cockpit instruments, multiplayer airshows, and a ground camera with movement and jet-following controls for watching aerobatics.
 
 ![A smoke loop seen from the ground lookout](verification/ground-airshow.png)
 
@@ -8,9 +8,17 @@ Stratos is a single-file WebGPU flight simulator with a procedural alpine coast,
 
 [Play Stratos in your browser](https://sanketshahane05.github.io/stratos-flight-simulator/).
 
-Download [index.html](index.html) and open it in a WebGPU-enabled browser. Chrome 157 was tested with hardware acceleration. The simulator requires no installation, build, external assets, or network connection.
+Download [index.html](index.html) and open it in a WebGPU-enabled browser. Chrome 157 was tested with hardware acceleration. Solo flight runs offline without installation, a build step, or external assets. Multiplayer rooms need an internet connection.
 
 For a ground-level airshow, choose **Airshow Practice** and click **Start Flight**. Smoke and spectator following start on. Press **3** to watch a loop. The **Following jet** button anchors your viewpoint to the jet's horizontal movement. Toggle it for a fixed lookout, use the arrow keys to move, and press **Home** or **Recenter** to choose a clear position near the jet.
+
+## Fly with friends
+
+Click **Fly with friends**, enter a callsign, and choose **Host room**. Copy the invite link for your friends, or share the eight-character room code. A room supports four pilots, and everyone starts in the same procedural world with their own aircraft and smoke color.
+
+Press **N** to open the room while flying. Choose **Watch** beside a pilot to track that aircraft from the ground. The arrow keys, height controls, Follow Jet toggle, and Recenter button work while watching another pilot.
+
+The host's browser stays open for the session. Players exchange flight data over native WebRTC data channels at 20 Hz. PeerJS's public cloud provides room discovery, and the client uses its documented public STUN/TURN configuration for connection setup. Availability depends on those shared services and the players' networks. See the [multiplayer verification](verification/multiplayer.md) for the measured connectivity limits.
 
 | Control | Action |
 | --- | --- |
@@ -25,6 +33,7 @@ For a ground-level airshow, choose **Airshow Practice** and click **Start Flight
 | 1, 2, 3, 4 | Left roll, right roll, inside loop, Immelmann |
 | X, R, P | Cancel a maneuver, restart, pause |
 | H, I, M | Toggle HUD, performance overlay, sound |
+| N | Open the multiplayer room and pilot list |
 | Esc | Release the mouse |
 
 ## Verification
