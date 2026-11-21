@@ -12,6 +12,14 @@ Download [index.html](index.html) and open it in a WebGPU-enabled browser. Chrom
 
 For a ground-level airshow, choose **Airshow Practice** and click **Start Flight**. Smoke and spectator following start on. Press **3** to watch a loop. The **Following jet** button anchors your viewpoint to the jet's horizontal movement. Toggle it for a fixed lookout, use the arrow keys to move, and press **Home** or **Recenter** to choose a clear position near the jet.
 
+## Play on a phone
+
+Open the live site in a WebGPU-capable mobile browser. Touch controls appear automatically: drag the left stick up to climb and sideways to roll, set the throttle with the slider, and hold Boost or Brake. The lower buttons switch cameras, toggle smoke, change its color, and open guided Tricks. Landing gear, pause, sound, and HUD controls are available without a keyboard.
+
+Landscape gives a wider view. **Airshow Practice** starts at a clear ground lookout; the stick then moves the camera, with Height, Zoom, Follow, and Recenter controls for framing the jet. The pilots button opens multiplayer hosting, joining, and watching friends.
+
+Phones start with **Low · Mobile** graphics and a capped render resolution. High and Ultra remain available in settings. WebGPU availability depends on the browser and device: use current Chrome on compatible Android devices, or Safari on iOS 26 or later. Older phones and in-app browsers may lack support. See the [mobile verification](verification/mobile.md) for tested layouts and limits; physical-phone performance has not been measured.
+
 ## Fly with friends
 
 Click **Fly with friends**, enter a callsign, and choose **Host room**. Copy the invite link for your friends, or share the eight-character room code. A room supports four pilots, and everyone starts in the same procedural world with their own aircraft and smoke color.
