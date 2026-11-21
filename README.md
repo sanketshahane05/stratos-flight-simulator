@@ -14,17 +14,29 @@ For a ground-level airshow, choose **Airshow Practice** and click **Start Flight
 
 ## Play on a phone
 
-Open the live site in a WebGPU-capable mobile browser. Touch controls appear automatically: drag the left stick up to climb and sideways to roll, set the throttle with the slider, and hold Boost or Brake. The lower buttons switch cameras, toggle smoke, change its color, and open guided Tricks. Landing gear, pause, sound, and HUD controls are available without a keyboard.
+Open the live site in a WebGPU-capable mobile browser. The flight screen keeps the joystick and one menu button. Drag the joystick up to climb and sideways to roll; use gestures on the right side for the other common actions.
 
-Landscape gives a wider view. **Airshow Practice** starts at a clear ground lookout; the stick then moves the camera, with Height, Zoom, Follow, and Recenter controls for framing the jet. The pilots button opens multiplayer hosting, joining, and watching friends.
+| Right-side gesture | Action |
+| --- | --- |
+| Swipe up / down | Increase / decrease throttle |
+| Tap | Toggle smoke |
+| Double-tap | Change camera |
+| Hold steady, then release | Afterburner on, then off |
+| Swipe left / right | Start a left / right guided roll during level flight |
+| Swipe up / down in Ground view | Raise / lower the lookout |
+| Pinch in Ground view | Zoom |
 
-Phones start with **Low · Mobile** graphics and a capped render resolution. High and Ultra remain available in settings. WebGPU availability depends on the browser and device: use current Chrome on compatible Android devices, or Safari on iOS 26 or later. Older phones and in-app browsers may lack support. See the [mobile verification](verification/mobile.md) for tested layouts and limits; physical-phone performance has not been measured.
+Landscape gives a wider view. **Airshow Practice** starts at a clear ground lookout, where the joystick moves the camera. The flight menu pauses the jet and contains smoke colors, loops, other tricks, and Airshow Practice. **More options** contains multiplayer, Follow/Recenter, landing gear, air brake, sound, HUD, and graphics. **Back to flight** resumes flying. The full gesture guide is also in this menu.
+
+Phones start with **Low · Mobile** graphics and a capped render resolution. High and Ultra remain available in settings. WebGPU availability depends on the browser and device: use current Chrome on compatible Android devices, or Safari on iOS 26 or later. Older phones and in-app browsers may lack support. See the [gesture verification](verification/mobile-gestures.md) for tested layouts and limits; physical-phone performance has not been measured.
 
 ## Fly with friends
 
 Click **Fly with friends**, enter a callsign, and choose **Host room**. Copy the invite link for your friends, or share the eight-character room code. A room supports four pilots, and everyone starts in the same procedural world with their own aircraft and smoke color.
 
 Press **N** to open the room while flying. Choose **Watch** beside a pilot to track that aircraft from the ground. The arrow keys, height controls, Follow Jet toggle, and Recenter button work while watching another pilot.
+
+On a phone, open the flight menu, expand **More options**, and select **Fly with friends**. The joystick and ground gestures work while watching another pilot.
 
 The host's browser stays open for the session. Players exchange flight data over native WebRTC data channels at 20 Hz. PeerJS's public cloud provides room discovery, and the client uses its documented public STUN/TURN configuration for connection setup. Availability depends on those shared services and the players' networks. See the [multiplayer verification](verification/multiplayer.md) for the measured connectivity limits.
 

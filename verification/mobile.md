@@ -1,5 +1,7 @@
 # Mobile controls and verification
 
+This report covers the earlier mobile button layout. The current gesture interface and checks are in [mobile-gestures.md](mobile-gestures.md).
+
 The single-file build adds a touch joystick, throttle slider, rudder, afterburner, air brake, landing gear, smoke/color controls, camera selection, guided aerobatics, and spectator movement, height, and zoom. Touch menus also expose pause, sound, HUD, and multiplayer controls. Mouse and keyboard controls remain available.
 
 Verified build: 219,143 bytes; SHA-256 `6d5d97e2156e4e149d5112bbf320165717f491d41d4735e71a2a21da2d8c3d96`.

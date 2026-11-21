@@ -1,10 +1,16 @@
 # Stratos performance and verification
 
-## Mobile build
+## Gesture build
 
-The current 219,143-byte build adds touch flight controls, mobile layouts, spectator controls, and capped mobile render resolution. Mobile browser checks and hardware limits are recorded in [mobile.md](mobile.md).
+The current 221,078-byte build replaces the mobile button rows with right-side gestures, keeps the joystick, and moves secondary actions to the flight menu. Interaction checks and hardware limits are recorded in [mobile-gestures.md](mobile-gestures.md).
 
-Current SHA-256 `6d5d97e2156e4e149d5112bbf320165717f491d41d4735e71a2a21da2d8c3d96`
+Current SHA-256 `9726ae9aa9c58866d651da5a42b9944bf68ee0c03a255e187ff49eeeae76409f`
+
+## Earlier mobile build
+
+The 219,143-byte build adds touch flight controls, mobile layouts, spectator controls, and capped mobile render resolution. Mobile browser checks and hardware limits are recorded in [mobile.md](mobile.md).
+
+SHA-256 `6d5d97e2156e4e149d5112bbf320165717f491d41d4735e71a2a21da2d8c3d96`
 
 ## Earlier multiplayer build
 
